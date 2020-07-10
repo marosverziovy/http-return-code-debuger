@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    environment:
+      HTTP_500: 3
+      HTTP_400: 8
+      HTTP_300: 25
+    ports:
+      - 8432:5000/tcp
